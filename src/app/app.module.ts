@@ -6,11 +6,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './modules/spinner/spinner.component';
+import { AppSpinnerDirective } from './shared/directive/app-spinner.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AppSpinnerDirective
   ],
   imports: [
     BrowserModule,

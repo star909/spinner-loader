@@ -3,7 +3,7 @@
         <h2>Small Spinner</h2>
         <button class="btn btn-primary" (click)="startSmallSpinner(true)" name="small">Show</button>
         <button class="btn btn-primary" (click)="stopSmallSpinner(false)" name="small">Hide</button>
-        <div class="card" style="width: 30rem;" *ngIf="smallSpinner">
+        <div class="card" style="width: 30rem;" *appAppSpinner="smallSpinner">
             <ngx-spinner name="small" [fullScreen]="false" type="ball-spin-clockwise" size="small"></ngx-spinner>
             <div class="card-body">
                 <input type="text" class="form-control">
@@ -14,7 +14,7 @@
         <h2>Medium Spinner</h2>
         <button class="btn btn-primary" (click)="startMediumSpinner(true)" name="medium">Show</button>
         <button class="btn btn-primary" (click)="stopMediumSpinner(false)" name="medium">Hide</button>
-        <div class="card" style="width: 30rem;" *ngIf="mediumSpinner">
+        <div class="card" style="width: 30rem;" *appAppSpinner="mediumSpinner">
             <ngx-spinner name="medium" [fullScreen]="false" type="ball-spin-clockwise" size="medium"></ngx-spinner>
             <div class="card-body">
                 <input type="text" class="form-control">
@@ -25,7 +25,7 @@
         <h2>Large Spinner</h2>
         <button class="btn btn-primary" (click)="startLargeSpinner(true)" name="large">Show</button>
         <button class="btn btn-primary" (click)="stopLargeSpinner(false)" name="large">Hide</button>
-        <div class="card" style="width: 30rem;" *ngIf="largeSpinner">
+        <div class="card" style="width: 30rem;" *appAppSpinner="largeSpinner">
             <ngx-spinner name="large" [fullScreen]="false" type="ball-spin-clockwise" size="large"></ngx-spinner>
             <div class="card-body">
                 <input type="text" class="form-control">
